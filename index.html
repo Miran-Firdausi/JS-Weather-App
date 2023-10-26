@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/728bcada90.js" crossorigin="anonymous"></script>
+    <title>Weather APP | Academor Major Project</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo__image" src="https://i.pinimg.com/originals/06/c4/f7/06c4f70ec5931e2342e703e8a3f0a253.png">
+            <h1 class="logo__text">Weather App</h1>
+        </div>
+        <div class="search-form">
+            <i class="fa-solid fa-location-dot"></i><span class="location"> Location</span>
+            <input type="search" placeholder="Enter City Name" class="search-bar" id="searchBar">
+            <button id="searchBtn" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="current-location-btn">Get Current Location</button>
+        </div>
+    </header>
+    <main>
+        <div class="aside">
+        <h2>Today's Overview</h2>
+        <div class="weather-card">
+            <div class="weather-card__date">Current Time</div>
+            <div class="weather-card__overview">
+                <div class="row">
+                    <img class="today__image">
+                    <div class="overview__temperature">
+                        <span class="temp-value">-</span><sup>°C</sup>
+                    </div>
+                </div>
+                <div class="overview__condition">-</div>
+            </div>
+            <div class="weather-card__details">
+                <div class="item">
+                    <div>Pressure</div>
+                    <div class="today-pressure">-</div>
+                </div>
+                <div class="item">
+                    <div >Humidity</div>
+                    <div class="today-humidity">-</div>
+                </div>
+                <div class="item">
+                    <div>Chance of rain</div>
+                    <div><span class="today-pop-value">-</span></div>
+                </div>
+                <div class="item">
+                    <div>Wind Speed</div>
+                    <div class="today-wind-speed">-</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="forecast">
+
+            <h2>Forecast / 3 Hour</h2>
+            <div class="hour-slider">
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hourly-time">Time</div>
+                    <div class="hourly-temp"><span class="hourly-temp-value">-</span>°C</div>
+                </div>
+            </div>
+
+            <h2>Daily Forecast</h2>
+            <div class="days-slider">
+                <div class="slider-card">
+                    <div class="slider-card__date">Date</div>
+                    <img class="forecast-icon">
+                    <div class="temp"><span id="forecastTempValue">-</span><sup>°C</sup></div>
+                    <div class="condition" id="forecastCondition">Clear</div>
+                    <div class="slider-card__details">
+                        <div>Humidity <span class="forecast-humidity-value">-</span>%</div>
+                        <div>Wind Speed <span class="forecast-windsp-value">-</span>km/h</div>
+                    </div>
+                </div>                
+                <div class="slider-card">
+                    <div class="slider-card__date">Date</div>
+                    <img class="forecast-icon">
+                    <div class="temp"><span id="forecastTempValue">-</span><sup>°C</sup></div>
+                    <div class="condition" id="forecastCondition">Clear</div>
+                    <div class="slider-card__details">
+                        <div>Humidity <span class="forecast-humidity-value">-</span>%</div>
+                        <div>Wind Speed <span class="forecast-windsp-value">-</span>km/h</div>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card__date">Date</div>
+                    <img class="forecast-icon">
+                    <div class="temp"><span id="forecastTempValue">-</span><sup>°C</sup></div>
+                    <div class="condition" id="forecastCondition">Clear</div>
+                    <div class="slider-card__details">
+                        <div>Humidity <span class="forecast-humidity-value">-</span>%</div>
+                        <div>Wind Speed <span class="forecast-windsp-value">-</span>km/h</div>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card__date">Date</div>
+                    <img class="forecast-icon">
+                    <div class="temp"><span id="forecastTempValue">-</span><sup>°C</sup></div>
+                    <div class="condition" id="forecastCondition">Clear</div>
+                    <div class="slider-card__details">
+                        <div>Humidity <span class="forecast-humidity-value">-</span>%</div>
+                        <div>Wind Speed <span class="forecast-windsp-value">-</span>km/h</div>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card__date">Date</div>
+                    <img class="forecast-icon">
+                    <div class="temp"><span id="forecastTempValue">-</span><sup>°C</sup></div>
+                    <div class="condition" id="forecastCondition">Clear</div>
+                    <div class="slider-card__details">
+                        <div>Humidity <span class="forecast-humidity-value">-</span>%</div>
+                        <div>Wind Speed <span class="forecast-windsp-value">-</span>km/h</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            Designed by <span class="name">Miran Firdausi</span>
+        </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
